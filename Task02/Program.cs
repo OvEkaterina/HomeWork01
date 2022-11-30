@@ -8,11 +8,13 @@ Console.WriteLine("Введите первое число :");
 int number1 = int.Parse (Console.ReadLine());
 Console.WriteLine("Введите второе число :");
 int number2 = int.Parse (Console.ReadLine());
-int max = number1;
-  if (number2 > max)
+  if (number2 > number1)
     { 
-        max = number2;
+        Console.WriteLine($"max = {number2}");
+        Console.WriteLine($"min = {number1}");
     } 
- Console.WriteLine($"max = {max}");
-
-    
+    else
+    {
+        Console.WriteLine($"max = {number1}");
+        Console.WriteLine($"min = {number2}");
+    }
